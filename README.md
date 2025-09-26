@@ -1,4 +1,55 @@
-# Alice_in_borderland_ZombieCardGame_Netflix
+# **Problem: Zombie Hunt Survival**
 
-3. Zombie Hunt
-   In this game, two players played cards from the same deck against each other. The one with the highest cumulative total won the game and took one card from the losing player. But there was a catch, as there were three special cards in the game: the zombie card, the shotgun card, and the vaccine card. A player with the zombie card could use that card to infect the other person. The shotgun card could be used against a zombie cardholder to eliminate, i.e., kill, the latter. But a vaccine card holder, instead of killing the zombie card holder, could cure him and make him human once again. At the end, the team, i.e., either zombies or humans, that had the most number of players, won. So one had to make sure that they ended up on the team that had the most number of players. Now, this was a really tactical game, and Arisu, Rei (another player in the game), and the others realized that they needed to join forces in order to make sure that they not only qualified for the game but also reduced the casualties. But obviously, in such games, it was difficult to trust the other person. There were people like Kazuya (who belonged to a yakuza family) who wanted to use force to eliminate the ones holding the zombie card and make sure that the humans won. Arisu once again applied his brains and made sure that the zombie cardholders won in the end. Arisu not only tactically approached the game, but he also showed empathy towards the other players, which brought about a change in their perspective. The biggest example of that change was Mr. Kazuya, who was moved by Arisu’s actions.
+### **Story Context**
+
+You are forced to play the deadly game **Zombie Hunt** inside the **National Institute of Virus Research**.
+Each player starts with **7 cards**, which may include:
+
+- **Normal cards** → ranks A–K across suits ♦ ♥ ♣ ♠, each with a numeric value.
+- **Zombie cards (Z)** → infect humans.
+- **Shotgun cards (S)** → kill zombies.
+- **Vaccine cards (V)** → cure zombies.
+
+Players face each other over multiple rounds. The outcome of each duel determines whether they survive as humans, become zombies, or are eliminated. At the end of the game, whichever side (Humans vs. Zombies) has the most surviving players wins.
+
+---
+
+### **Rules**
+
+1. **Playing Cards (Matching Suit Rule):**
+
+   - In each round, players must **play one card**.
+   - If a player is assigned a suit (♥, ♦, ♣, ♠), they must play a card of that suit if they have one.
+   - If they have no matching suit, they may play a **special card (Z, S, V)** instead.
+
+2. **Normal vs Normal (both human):**
+
+   - If both play normal cards of the assigned suits, the winner is decided by comparing the **cumulative total of all normal cards remaining in their hand (including the one just played)**.
+   - The winner **takes one card** from the loser’s hand.
+
+3. **Zombie Card (Z):**
+
+   - Defeats any normal card.
+   - The losing player becomes infected → converted into a Zombie and gains an extra `Z` card in their hand.
+
+4. **Shotgun Card (S):**
+
+   - Can be played against a Zombie.
+   - Instantly eliminates the Zombie player.
+   - Ineffective against humans.
+   - Disappears after one use.
+
+5. **Vaccine Card (V):**
+
+   - Played against a Zombie card, it cancels the infection and cures the zombie back into a human.
+   - Cannot be used on oneself.
+
+6. **Game Over Conditions:**
+
+   - A player is eliminated if they run out of **normal cards**.
+   - A zombie player is eliminated if killed by a **Shotgun**.
+   - At the end of all rounds, the side with fewer members (Humans or Zombies) is eliminated.
+
+7. **Game Clear Condition:**
+
+   - A player survives all rounds and belongs to the majority side (Humans or Zombies).
